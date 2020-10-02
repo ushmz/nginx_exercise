@@ -35,7 +35,7 @@ Vagrant.configure("2") do |config|
     # Create a private network, which allows host-only access to the machine
     # using a specific IP.
     # server.vm.network "private_network", ip: "192.168.33.10"
-    server.vm.network "private_network", type: "dhcp"
+    server.vm.network "private_network", ip:"192.168.33.11", virtualbox__intnet: "intnet"
 
     # Create a public network, which generally matched to bridged network.
     # Bridged networks make the machine appear as another physical device on
@@ -83,7 +83,7 @@ Vagrant.configure("2") do |config|
     # Create a private network, which allows host-only access to the machine
     # using a specific IP.
     # server.vm.network "private_network", ip: "192.168.33.10"
-    server.vm.network "private_network", type: "dhcp"
+    server.vm.network "private_network", ip:"192.168.33.12", virtualbox__intnet: "intnet"
 
     # Create a public network, which generally matched to bridged network.
     # Bridged networks make the machine appear as another physical device on
@@ -131,7 +131,7 @@ Vagrant.configure("2") do |config|
     # Create a private network, which allows host-only access to the machine
     # using a specific IP.
     # server.vm.network "private_network", ip: "192.168.33.10"
-    server.vm.network "private_network", type: "dhcp"
+    server.vm.network "private_network", ip:"192.168.33.13", virtualbox__intnet: "intnet"
 
     # Create a public network, which generally matched to bridged network.
     # Bridged networks make the machine appear as another physical device on
