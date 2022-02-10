@@ -30,8 +30,6 @@ services:
     ports:
       - 8080:80
     container_name: nginx_exercise_case2_server
-    volumes:
-      - ./conf.d:/etc/nginx/conf.d
 
 networks:
   default:
